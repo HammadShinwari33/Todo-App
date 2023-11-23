@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+body{
+    background: #1a1d36;
+    color: #fff;
+    padding-top: 2vw;
+}
+main{
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+}
+.app{
+    width: 100%;
+    max-width: 500px;
+}
+.app header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+.app header h1{
+    color: gray;
+    font-size: 30px;
+    font-weight: 700;
+}
+.app header button{
+    color: gray;
+    font-size: 18px;
+    border: 2px solid gray;
+    padding: 1.5vh;
+    border-radius: 15px;
+    text-transform: uppercase;
+}
+.app header button:hover{
+    background: #fff;
+    color: #000;
+    border-color: #fff;
+    transition: 0.5s ease-in-out;
+}
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: #2c335a;
+    box-shadow: 0 0 4px rgba(0,0,0,0.1);
+    margin-bottom: 1.5rem;
+}
+.item:last-of-type{
+    margin-bottom: 0;
+}
+.item input[type="checkbox"]{
+    margin-right: 1rem;
+}
+.item input[type="text"]{
+    appearance: none;
+    background: none;
+    border: none;
+    outline: none;
+    font-weight: 400;
+    color: #fff;
+    font-size: 20px;
+    flex: 1 1 0%;
+    margin-right: 1rem;
+}
+/* .item input[type="text"]:not(:disabled){
+    border-bottom: 2px solid #fff;
+} */
+.item.complete{
+    opacity: 0.7;
+}
+/* .item.complete input[type="text"]{
+    text-decoration: double;
+} */
+/* .item:hover, 
+.item:focus-within{
+    outline: 2px solid #fff;
+} */
+.actions button{
+    color: #6cd422;
+    margin-right: 1rem;
+    opacity: 0.8;
+    transform: 0.1s;
+}
+.actions button.remove-btn{
+    color: red;
+}
+.actions button:hover{
+    opacity: 10;
+}
+.actions button:last-of-type{
+    margin-right: 0;
+}
